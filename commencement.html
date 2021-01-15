@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="commencement.css">
+  <link rel="stylesheet" href="https://use.typekit.net/zra6vqw.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <script src="https://kit.fontawesome.com/9e13c09592.js" crossorigin="anonymous"></script>
+  <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
+  <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <header class="commencement__header">
+    <p>EVMS 2020</p>
+  </header> -->
+  <!-- ! put back into header container -->
+  <!-- <i class="commencement__mobile-menu fas fa-bars"></i> -->
+  <!-- <nav class="commencement__header__nav-links">
+        <div class="commencement__header__nav-link">HOME</div>
+        <div class="commencement__header__nav-link">CELEBRATING THE CLASS OF 2020</div>
+        <div class="commencement__header__nav-link">FAQ'S</div>
+        <div class="commencement__header__nav-link">COMMENCEMENT SLIDES</div>
+        <div class="commencement__header__nav-link">RESOURCES</div>
+        <div class="commencement__header__nav-link">CONTACT US</div>
+      </nav> -->
+  <!-- <header class="commencement__page-header">
+    <div class="commencement__header__container">
+      <h3 class="commencement__header__title">commencement 2020</h3>
+    </div>
+  </header> -->
+  <!-- <header class="commencement__header">
+    <div class="commencement__social-icons">
+      <i class="commencement__social-icon fab fa-twitter"></i>
+      <i class="commencement__social-icon fab fa-facebook"></i>
+      <i class="commencement__social-icon fab fa-instagram"></i>
+    </div>
+  </header> -->
+  <main class="commencement">
+    <section id="confetti" class="commencement__intro">
+      <div class="commencement__intro-wrapper">
+        <div class="commencement__intro__copy">
+          <h3 class="commencement__intro__title">Congratulations, Class of 2020</h3>
+          <p class="commencement__intro__p">Welcome to the 2020 EVMS Virtual Commencement — home for this year's online
+            ceremony and the go-to-place for celebrating the graduating class.</p>
+          <p class="commencement__intro__p">The COVID-19 pandemic has impacted us all, but it certainly does not
+            diminish the achievements of our graduates. We appreciate the EVMS community coming together to celebrate
+            the Class of 2020 and encourage you to join us in recognizing their accomplishments.</p>
+        </div>
+        <!-- !remove for now -->
+        <!-- <a href="" class="commencement__intro__pres-message">MESSAGE FROM THE PRESIDENT</a> -->
+      </div>
+    </section>
+    <section class="commencement__video-portal">
+      <h3 class="commencement__video-portal__title animate">Virtual Commencement Live Stream</h3>
+      <!-- <video src="http://blogs.evms.edu/video/commencement-title-screen-v1b.mp4" class="commencement__video-portal__video" muted autoplay loop></video> -->
+      <div class="iframe-container">
+        <iframe class="commencement__video-portal__video" width="560" height="315" src="https://www.youtube.com/embed/3Dw5mw03dr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <!-- link to youtube and fb live. point out links to send people to -->
+      <!-- <p class="commencement__video-portal__issue-disclaimer animate"><strong>Technical issues?</strong> Email
+        webmaster@evms.edu</p> -->
+        <div class="commencement__stream-links">
+          <!-- <a href="https://www.ustream.tv/channel/evms-commencement" class="commencement__stream__link">View on Ustream</a>
+          <a href="https://youtu.be/ng8W41w1EzA" class="commencement__stream__link">View on YouTube</a> -->
+          <!-- <a class="commencement__stream__link"></a> -->
+        </div>
+      <div class="commencement__resource-links">
+        <a href="https://www.evms.edu/education/commencement/day-of_instructions/"
+          class="commencement__resource-link commencement__intro__day-of animate">day of instructions</a>
+        <a href="https://www.evms.edu/education/commencement/order_of_exercises/"
+          class="commencement__resource-link commencement__intro__commencement-order animate">order of commencement</a>
+        <a href="https://www.evms.edu/media/evms_public/departments/marketing__communications/graduation/2020_EVMS_Commencement_Program_Web.pdf"
+          class="commencement__resource-link commencement__intro__program animate">commemorative pdf</a>
+      </div>
+    </section>
+    <hr class="commencement__section-divider">
+    <section class="commencement__social-wall">
+      <h3 class="commencement__social-wall__title animate">Virtual Celebration</h3>
+      <p class="commencement__social-wall__description">Join the virtual celebration. Post photos and comments on EVMS’
+        social media channels using <strong class="commencement__hashtag">#EVMSGrad2020</strong> or use the button below
+        to post a message to the Graduate Celebration Wall. All posts using <strong
+          class="commencement__hashtag">#EVMSGrad2020</strong> will be captured, moderated and posted to the wall.</p>
+      <button id="createMessage" class="commencement__cta commencement__cta commencement__social-wall__post-form">Post
+        Your Message</button>
+      <div id="formContainer" class="commencement__form__container" style="display: none;">
+
+        <script type="text/javascript" src="https://evms.formstack.com/forms/js.php/message_to_evms_graduate"></script>
+        <noscript><a href="https://evms.formstack.com/forms/message_to_evms_graduate" title="Online Form">Online Form -
+            Message to EVMS Graduate</a></noscript>
+        <div style="text-align:right; font-size:x-small;"><a
+            href="http://www.formstack.com?utm_source=jsembed&utm_medium=product&utm_campaign=product+branding&fa=h,3869277"
+            title="Powered by Formstack">Powered by Formstack</a></div>
+
+      </div>
+      <div class="commencement__social-wall__juicer-feed">
+        <ul class="juicer-feed" data-per="8" data-feed-id="commencement-2020-0ca7645a-1956-4188-b64b-2f47f56a22a2"></ul>
+      </div>
+    </section>
+    <hr class="commencement__section-divider">
+    <section id="confetti2" class="commencement__commencement-slides">
+      <figure class="commencemenet__commencement-slides__image-wrapper">
+        <img src="./class-of-2020-presentation-of-graduates.jpg" alt="" class="commencement__commencement-slides__image">
+      </figure>
+      <div class="commencement__commencement-slides__content">
+        <div class="commencement__commencement-slides__wrapper">
+          <h3 class="commencement__commencement-slides__title">Commencement Slides</h3>
+          <p class="commencement__commencement-slides__description">Search for graduates by viewing their commemorative slides and congratulate them for their honors and awards on the virtual wall.</p>
+          <a href="https://vgrad2.z19.web.core.windows.net/evms/i/slideonly.html" class="commencement__cta commencement__commencement-slides__cta" target="_blank">View Slides</a>
+        </div>
+      </div>
+    </section>
+    <hr class="commencement__section-divider">
+    <section class="commencement__congrats">
+      <h3 class="commencement__congrats__title">2020 Proud</h3>
+      <p class="commencement__congrats__description">Staff, faculty, alumni and community members all wish the Class of 2020 a congratulations!</p>
+      <div class="commencement__congrats__iframe">
+        <iframe class="commencement__congrats__video" width="560" height="315" src="https://www.youtube.com/embed/eVutZgKVrE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+    <hr class="commencement__section-divider">
+    <section class="commencement__receptions">
+      <h3 class="commencement__receptions__title">Virtual Receptions</h3>
+      <div class="commencement__receptions__content-blocks">
+        <!-- PA -->
+        <div class="commencement__receptions__content-block">
+          <div class="commencement__receptions__content-wrapper">
+            <figure class="commencement__receptions__image-wrapper">
+              <img src="./PA-program-celebration@2x.png" alt="" class="commencement__receptions__image">
+            </figure>
+            <div class="commencement__receptions__program">
+              <h2 class="commencement__receptions__program__title">PA Program</h3>
+            </div>
+          </div>
+          <div class="commencement__receptions__program__details">
+            <p id="showPA" class="commencement__receptions__program__details__label">Show Details</p>
+            <div id="showPaIcon" class="commencement__plus"></div>
+
+            <p id="hidePA" class="commencement__receptions__program__details__label">Hide Details</p>
+            <div id="hidePaIcon" class="commencement__minus"></div>
+
+          </div>
+          <div id="paInfo" class="commencement__receptions__info">
+            <p class="commencement__receptions__info-title">Virtual Awards and <br>White Coat Ceremony</p>
+            <p class="commencement__receptions__logistics">Friday, May 15, 2020 4:00 p.m. 
+            </p>
+            <p class="commencement__receptions__contact">The event will be held virtually via Bluejeans. For more information contact <a class="contact-email" href="mailto:stromaND@EVMS.EDU">Nancy&nbsp; Stromann</a></p>
+          </div>
+        </div>
+        <!-- Art -->
+        <!-- <div class=x
+          <div class="commencement__receptions__content-wrapper commencement__background-two">
+            <figure class="commencement__receptions__image-wrapper">
+              <img src="./ArtTherapy-program-celebration@2x.png" alt="" class="commencement__receptions__image">
+            </figure>
+            <div class="commencement__receptions__program">
+              <h3 class="commencement__receptions__program__title">Art Therapy Program</h3>
+            </div>
+          </div>
+          <div class="commencement__receptions__program__details">
+            <p id="showArt" class="commencement__receptions__program__details__label">Show Details</p>
+            <div id="showArtIcon" class="commencement__plus"></div>
+
+            <p id="hideArt" class="commencement__receptions__program__details__label">Hide Details</p>
+            <div id="hideArtIcon" class="commencement__minus"></div>
+
+          </div>
+          <div id="artInfo" class="commencement__receptions__info"></div>
+        </div> -->
+        <!-- SA -->
+        <div class="commencement__receptions__content-block">
+          <div class="commencement__receptions__content-wrapper commencement__background-two">
+            <figure class="commencement__receptions__image-wrapper">
+              <img src="./SA-program-celebration@2x.png" alt="" class="commencement__receptions__image">
+            </figure>
+            <div class="commencement__receptions__program">
+              <h2 class="commencement__receptions__program__title">SA Program</h3>
+            </div>
+          </div>
+          <div class="commencement__receptions__program__details">
+            <p id="showSA" class="commencement__receptions__program__details__label">Show Details</p>
+            <div id="showSaIcon" class="commencement__plus"></div>
+
+            <p id="hideSA" class="commencement__receptions__program__details__label">Hide Details</p>
+            <div id="hideSaIcon" class="commencement__minus"></div>
+
+          </div>
+          <div id="saInfo" class="commencement__receptions__info">
+            <p class="commencement__receptions__info-title">Virtual Awards and <br>White Coat Ceremony</p>
+            <p class="commencement__receptions__logistics">Friday, May 15, 2020 3:00 p.m. 
+            </p>
+            <p class="commencement__receptions__contact">The event will be held virtually. For more information contact <a class="contact-email" href="mailto:landJJ@EVMS.EDU">Jennifer&nbsp; Land</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="commencement__section-divider">
+    <section class="commencement__resources">
+      <div class="commencement__resources__icons">
+        <!-- <div id="resourceWrapper1" class="commencement__resources__content-wrapper">
+          <figure class="commencement__resources__icon-wrapper">
+            <a href="https://www.gradphotonetwork.com/qpplus/register/event/8680/27097031">
+              <img src="https://www.evms.edu/media/evms_public/departments/health_professions/icons/Camera.svg" alt="" class="commencement__resources__icon animate">
+            </a>
+          </figure>
+          <a href="https://www.gradphotonetwork.com/qpplus/register/event/8680/27097031" id="resourceLabel2"
+            class="commencement__resources__icon__label animate">Order Photos</a>
+      </div> -->
+        <div id="resourceWrapper2" class="commencement__resources__content-wrapper">
+          <figure class="commencement__resources__icon-wrapper">
+            <a href="https://www.evms.edu/alumni/">
+              <img src="./Connect.svg" alt="" class="commencement__resources__icon animate">
+            </a>
+          </figure>
+          <a href="https://www.evms.edu/alumni/" id="resourceLabel2"
+            class="commencement__resources__icon__label animate">Stay
+            Connected</a>
+        </div>
+        <div id="resourceWrapper3" class="commencement__resources__content-wrapper">
+          <figure class="commencement__resources__icon-wrapper">
+            <a href="https://www.evms.edu/education/commencement/student_awards/">
+              <img src="https://www.evms.edu/media/evms_public/departments/health_professions/icons/certificateIcon.svg"
+                alt="" class="commencement__resources__icon animate ">
+            </a>
+          </figure>
+          <a href="./certificateIcon.svg" id="resourceLabel3"
+            class="commencement__resources__icon__label animate">Student Awards</a>
+        </div>
+      </div>
+    </section>
+    <hr class="commencement__section-divider">
+    <section class="commencement__more-info">
+      <div class="commencement__more-info__content">
+        <div class="commencement__more-info__copy">
+          <h3 class="commencement__more-info__title">More to Come...</h3>
+          <p class="commencement__more-info__description">Visit the Commencement FAQ page for information about
+            participating in a future, in-person ceremony as well as receiving your physical diploma.</p>
+        </div>
+        <a href="https://www.evms.edu/education/commencement/faq/"
+          class="commencement__cta commencement__more-info__cta">FAQ's</a>
+      </div>
+    </section>
+  </main>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.js"></script>
+  <script src="commencement.js"></script>
+</body>
+
+</html>
